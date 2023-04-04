@@ -2,6 +2,7 @@ package com.cybage.ecommerce.entity;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.Set;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -15,10 +16,14 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data; // automatically generate getter/setters behind the scenes reduce boilerplatecode
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name ="product")
-@Data
+//@Data
+@Getter
+@Setter
 public class Product {
 	
 	@Id
@@ -59,4 +64,6 @@ public class Product {
 	@ManyToOne()
 	@JoinColumn(name="category_id", nullable = false)
     private ProductCategory category;
+	
+	
 }
