@@ -12,7 +12,7 @@ import com.cybage.ecommerce.dto.Purchase;
 import com.cybage.ecommerce.dto.PurchaseResponse;
 import com.cybage.ecommerce.service.CheckoutService;
 
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/checkout")
 public class CheckoutController {
