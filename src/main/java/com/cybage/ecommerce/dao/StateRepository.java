@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.cybage.ecommerce.entity.State;
 
-@CrossOrigin
+//@CrossOrigin
 public interface StateRepository extends JpaRepository<State, Integer>{
 	
 	List<State> findByCountryCode(@Param("code") String code);

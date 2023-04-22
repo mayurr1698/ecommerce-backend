@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.cybage.ecommerce.entity.ProductCategory;
 
-@CrossOrigin
+//@CrossOrigin
 @RepositoryRestResource(collectionResourceRel = "productCategory", path="product-category")
 public interface ProductCategoryRepository  extends JpaRepository<ProductCategory, Long>{
 

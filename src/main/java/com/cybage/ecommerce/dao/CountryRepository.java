@@ -8,7 +8,7 @@ import com.cybage.ecommerce.entity.Country;
 
 
 
-@CrossOrigin
+//@CrossOrigin
 @RepositoryRestResource(collectionResourceRel = "countries", path="countries")
 public interface CountryRepository  extends JpaRepository<Country, Integer> {
 

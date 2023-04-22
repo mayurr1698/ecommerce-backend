@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.cybage.ecommerce.entity.Product;
 
 //@CrossOrigin("http://localhost:4200") - for specific ip can add multiple for any ip use wildCard @crosOrigin only
-@CrossOrigin
+//@CrossOrigin
 public interface ProductRepository  extends JpaRepository<Product, Long>{
 	
 	Page<Product> findByCategoryId(@Param("id") Long id, Pageable pageable);
